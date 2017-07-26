@@ -1,71 +1,77 @@
+nav,
+header,
+footer {
+    width: 100%;
+    display: block;
+}
+
 .main-container {
     border: 1px solid grey;
+    width: 100%;
 }
 
 nav {
     width: 100%;
     margin: 0;
 }
-nav ul{
-    padding: 0;
+
+nav ul {
+    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
-nav .topnav {
-    display: block;
+ul.topnav li{
     list-style: none;
-}
-
-nav ul li {
     display: inline;
-    padding: 5px;
+    padding: 10px;
+
 }
 
-.topnav-right {
+ul.topnav li.topnav-right {
     float: right;
+}
+
+div.calculator {
+    border: 1px solid grey;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+h1.calc-header {
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #fff;
+    background-color: red;
+    margin: 5px 1% 0 1%;
+}
+
+form input.calc-button {
+    float: right;
+    margin-right: 1%;
+}
+
+div.calc-info {
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+b.bold-red {
+    color: red;
 }
 
 .row {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main-container {
-    border: 1px solid grey;
-    width: 100%;
-    margin: auto;
-}
-
-.calculator {
-    margin: auto;
-    text-align: center;
-    padding: 4px;
-    border: 1px solid red;
-    border-radius: 5px;
-    background-color: grey;
-}
-
-.calculator-use {
-    padding-left: 20px;
+    display: flex; /*grab elements inside row and change size*/
+    flex-wrap: wrap; /*all elements in the row, as things get smaller, wrap around underneath*/
+    align-items: center; /*takes all items inside container and center them*/
 }
 
 .row::after {
     display: table;
     clear: both; /*removes floats so they're not inherited*/
     content: ""; /*clear content*/
-}
-
-.Percantage-header {
-    color: #fff;
-    background-color: red;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 3px;
-}
-
-* {
-    box-sizing: border-box; /*include padding and margin into size of element and make it actual size*/
 }
 
 .col-1 {width: 8.33%;}
@@ -80,3 +86,14 @@ nav ul li {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box; /*include padding and margin into size of element and make it actual size*/
+}
+
+
+
+
+
+
+

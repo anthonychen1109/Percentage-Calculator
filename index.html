@@ -2,38 +2,68 @@
 <html lang="en">
 <head>
     <title>Percentage Calculator</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="main-container">
-    <nav>
-    <ul class="topnav">
-        <li><a href="#calculator">Calculators</a></li>
-        <li><a href="#">Math</a></li>
-        <li class="topnav-right"><a href="#">Basic Calculator</a></li>
-    </ul>
-    <h1>Percentage Calculator</h1>
-</nav>
-    <div class="container">
+    <div class="main-container">
+        <nav>
+            <ul class="topnav">
+                <li> <a href="#Calculaotrs">Calculators</a></li> >
+                <li> <a href="#Math">Math</a></li> > Percentage Calculator
+                <li class="topnav-right"> <a href="#Basic-Calculators">Basic Calculator</a></li>
+            </ul>
+        </nav>
         <div class="row">
             <div class="col-2"></div>
             <div class="col-4 calculator">
-                <h1 class="Percantage-header">Percentage Calculator</h1>
-                <p>X is what % of Y?</p>
+                <h1 class="calc-header">Percentage Calculator</h1>
+                <p>Choose:</p>
                 <form id="xIsWhatPercentOfY">
+                    <select class="formulaBox" id="selector">
+                        <option value="a">What is Y% of X?</option>
+                        <option value="b">X is Y% of What?</option>
+                        <option value="c">What % of X is Y?</option>
+                        <option value="d">X% of what is Y?</option>
+                        <option value="e">Y% of X is What?</option>
+                    </select>
+                    <br>
+                    <br>
                     <input type="text" id="numField1"> is what % of
-                    <input type="text" id="numField2"> ? <br><br>
-                    <input type="submit" value="Calculate">
+                    <input type="text" id="numField2">?<br><br>
+                    <input type="submit" value="Calculate" class="calc-button">
                 </form>
-                <h3 id="resultField">Result: 100%</h3>
+                <h3 id="resultField"></h3>
                 <script type="text/javascript" src="calc.js"></script>
             </div>
-            <div class="col-6 calculator-use">
-                <h1>Calculator Use</h1>
-                <p>Find a percentage or work out the percentage given numbers and percent values. Use percent formulas to figure out percentages and unknowns in equations.</p>
+            <div class="col-6">
+                <div class="calc-info">
+                    <h1>Calculator Use</h1>
+                    <p>Find a percentage or work out the percentage given numbers and percent values. Use percent formulas to figure out percentages and unknowns in equations.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>How to Calculate Percentages</h4>
+                            <ul>
+
+                                <li>Written as an equation: Y = P% * X</li>
+                                <li>The 'what' is Y that we want to solve for</li>
+                                <li>Remember to first convert percentage to decimal, dividing by 100</li>
+                                <li>Solution: Solve for Y using the percentage formula
+                                    <b class="bold-red">Y = P% * X</b></li>
+                                </div>
+                                <div class="col-6">
+                                    <h4>Example: What is 10% of 25?</h4>
+                                    <ul>
+                                        <li>Written using the percentage formula: <b class="bold-red">Y = 10% * 25</b></li>
+                                        <li>First convert percentage to a decimal 10/100 = 0.1</li>
+                                        <li>Y = 0.1 * 25 = 2.5</li>
+                                        <li>So 10% of 25 is 2.5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
-</html>
+    </body>
+    </html>
